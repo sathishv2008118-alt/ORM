@@ -18,7 +18,7 @@ enter the code for admin.py and model.py
 
 
 # PROGRAM
-models.py
+```models.py
 
 from django.db import models
 from django.contrib import admin
@@ -31,12 +31,12 @@ class Product(models.Model):
     manuf_date=models.DateField(default="not available")
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display=["ProductName","PBrand","Product_MRP","manuf_date"]
-admin.py
+    list_display=["ProductName","PBrand","Product_MRP","manuf_date"]```
+```admin.py
 
 from django.contrib import admin
 from .models import Product,ProductAdmin
-admin.site.register(Product,ProductAdmin)
+admin.site.register(Product,ProductAdmin)```
 # OUTPUT
 <img width="1917" height="1015" alt="Screenshot 2025-11-26 094238" src="https://github.com/user-attachments/assets/82e7e6f8-c85d-45c5-a6de-76a4717a03cd" />
 
